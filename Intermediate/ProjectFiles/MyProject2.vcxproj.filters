@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\MyProject2.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{BCB46543-0644-47C3-A2D9-8830B74E7CC1}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\MyProject2.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\MyProject2Editor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{1E69A874-4E9A-4337-B3FD-CF0819048092}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\MyProject2">
+			<UniqueIdentifier>{4E2DB80A-3DC5-40E7-ACB1-29E28685682B}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\MyProject2\HelloWorldPrinter.cpp">
+			<Filter>Source\MyProject2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\MyProject2\HelloWorldPrinter.h">
+			<Filter>Source\MyProject2</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\MyProject2\MyProject2.Build.cs">
+			<Filter>Source\MyProject2</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\MyProject2\MyProject2.cpp">
+			<Filter>Source\MyProject2</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\MyProject2\MyProject2.h">
+			<Filter>Source\MyProject2</Filter>
+		</ClInclude >
+		<Filter Include="Source\MyProject2\Resources">
+			<UniqueIdentifier>{DD417D9A-30A5-442B-A793-A19B77342739}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\MyProject2\Resources\Windows">
+			<UniqueIdentifier>{CB5A146A-B4C2-4DCB-B245-D1682C7F99ED}</UniqueIdentifier>
+		</Filter>
+		<ResourceCompile Include="..\..\Source\MyProject2\Resources\Windows\MyProject2.rc">
+			<Filter>Source\MyProject2\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
