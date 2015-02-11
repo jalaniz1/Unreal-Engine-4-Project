@@ -12,6 +12,12 @@ UCLASS()
 class MYPROJECT2_API AHelloWorldPrinter : public AActor
 {
 	GENERATED_BODY()
+		UPROPERTY()
+		int32 MyNumber;
+	AHelloWorldPrinter(const FObjectInitializer& ObjectInitializer);
+	virtual void BeginPlay() override;
+
+		
 	
 	
 	
