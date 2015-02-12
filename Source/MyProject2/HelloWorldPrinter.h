@@ -16,6 +16,7 @@ class MYPROJECT2_API AHelloWorldPrinter : public AActor
 		int32 MyNumber;
 	AHelloWorldPrinter(const FObjectInitializer& ObjectInitializer);
 	virtual void BeginPlay() override;
+	void ClearAndChangeDebugMsg();
 
 		
 	

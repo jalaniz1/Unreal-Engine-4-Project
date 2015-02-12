@@ -15,8 +15,19 @@ void AHelloWorldPrinter::BeginPlay(){
 	if (GEngine){
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Hello World!"));
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::FromInt(MyNumber));
+	
+		GetWorldTimerManager().SetTimer(this, &AHelloWorldPrinter::ClearAndChangeDebugMsg, 10.0f, true);
+		
 	}
 
 }
+
+void AHelloWorldPrinter::ClearAndChangeDebugMsg(){
+	GEngine->ClearOnScreenDebugMessages();
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, TEXT("Howdy!"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::FromInt(MyNumber+=1));
+	
+}
+
 
 
